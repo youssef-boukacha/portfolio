@@ -16,11 +16,11 @@
 :root {
   /* Couleurs */
   --couleur-fond: white;
-  --couleur-fond-clair:#355872;
+  --couleur-fond-clair:#d7eeff;
   --couleur-texte: black;
   --couleur-texte-doux: #5b6478;
   --couleur-principale: #2f5bea;
-  --couleur-bordure: #dde3ec;
+  --couleur-bordure: black;
 
   /* Typographie */
   --police: "Inter", Arial, sans-serif;
@@ -82,13 +82,16 @@ a {
   font-size: 18px;
   font-weight: 600;
   color: black;
-  background-color:white;
+  background-color:cyan;
   cursor: pointer;
   border-color: green ;
-  border: 17px solid gray;
+  border: 17px solid cyan;
 
 }
-
+.bouton:hover{
+  background-color:white;
+  border: 17px solid white;
+}
 
 .lien {
   font-weight: 600;
@@ -137,15 +140,18 @@ a {
   justify-content: space-between;
   align-items: center;
   gap: 64px;
-  background-color: #7AAACE;
+  background-color: #d7eeff;
   
 
 }
-
+.userName{
+  font-weight: bold;
+  font-size: 10px;
+}
 .presentation__texte {
   max-width: 600px;
   font-style: oblique;
- font-weight: bold;
+ font-weight: normal;
  font-size: 16px ;
  padding: 19px;
 }
@@ -157,7 +163,7 @@ a {
 }
 
 .presentation h1 {
-  font-size: 56px;
+  font-size: 30px;
 }
 
 .metier {
@@ -181,7 +187,7 @@ a {
 /* ---------- 5. Sections communes ---------- */
 .section {
   padding: 80px 0;
-  background-color: #355872;
+  background-color:#d7eeff ;
 }
 
 .section--claire {
@@ -197,7 +203,7 @@ a {
   margin-top: 8px;
   margin-bottom: 40px;
   color: black;
-  font-weight:bold;
+  font-weight:normal;
  
   
   
@@ -220,7 +226,7 @@ a {
 
 /* ---------- parcours  ---------- */
 .parcours {
- font-weight: bold;
+ font-weight: normal;
  padding-left: 150px;
  padding-right: 150px;
 color: var(--couleur-texte);
@@ -229,7 +235,7 @@ margin-bottom: 15px;
 
 /* ---------- objectif profissionelle   ---------- */
 .objectif {
-  font-weight: bold;
+  font-weight: normal;
  padding-left: 150px;
   padding-right: 150px;
   color: var(--couleur-texte);
