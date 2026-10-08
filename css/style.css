@@ -15,9 +15,9 @@
 /* ---------- 1. Variables ---------- */
 :root {
   /* Couleurs */
-  --couleur-fond: #ffffff;
-  --couleur-fond-clair: #f4f6fa;
-  --couleur-texte: #1c2333;
+  --couleur-fond: white;
+  --couleur-fond-clair:#355872;
+  --couleur-texte: black;
   --couleur-texte-doux: #5b6478;
   --couleur-principale: #2f5bea;
   --couleur-bordure: #dde3ec;
@@ -70,6 +70,7 @@ a {
   max-width: var(--largeur-max);
   margin: 0 auto;
   padding: 0 24px;
+  text-align: left;
 }
 
 .bouton {
@@ -78,12 +79,16 @@ a {
   border: none;
   border-radius: var(--rayon);
   font-family: var(--police);
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 600;
-  color: #ffffff;
-  background-color: var(--couleur-principale);
+  color: black;
+  background-color:white;
   cursor: pointer;
+  border-color: green ;
+  border: 17px solid gray;
+
 }
+
 
 .lien {
   font-weight: 600;
@@ -93,7 +98,9 @@ a {
 /* ---------- 3. En-tête ---------- */
 .en-tete {
   border-bottom: 1px solid var(--couleur-bordure);
+  background-color: #FBF9F9;
 }
+
 
 .en-tete__contenu {
   display: flex;
@@ -105,6 +112,8 @@ a {
 .logo {
   font-size: 20px;
   font-weight: 700;
+  color: 1C2333;
+  
 }
 
 .menu {
@@ -115,6 +124,7 @@ a {
 .menu a {
   font-size: 16px;
   color: var(--couleur-texte-doux);
+  font-style:normal;
 }
 
 /* ---------- 4. Présentation ---------- */
@@ -127,10 +137,17 @@ a {
   justify-content: space-between;
   align-items: center;
   gap: 64px;
+  background-color: #7AAACE;
+  
+
 }
 
 .presentation__texte {
   max-width: 600px;
+  font-style: oblique;
+ font-weight: bold;
+ font-size: 16px ;
+ padding: 19px;
 }
 
 .surtitre {
@@ -158,11 +175,13 @@ a {
   width: 280px;
   height: 280px;
   border-radius: 50%;
+  
 }
 
 /* ---------- 5. Sections communes ---------- */
 .section {
   padding: 80px 0;
+  background-color: #355872;
 }
 
 .section--claire {
@@ -171,18 +190,24 @@ a {
 
 .section h2 {
   font-size: 36px;
+  font-weight: bold;
 }
 
 .section__intro {
   margin-top: 8px;
   margin-bottom: 40px;
-  color: var(--couleur-texte-doux);
+  color: black;
+  font-weight:bold;
+ 
+  
+  
 }
 
 /* ---------- 6. Compétences ---------- */
 .competences {
   display: flex;
   gap: 16px;
+
 }
 
 .competences li {
@@ -192,6 +217,25 @@ a {
   font-weight: 600;
   background-color: var(--couleur-fond);
 }
+
+/* ---------- parcours  ---------- */
+.parcours {
+ font-weight: bold;
+ padding-left: 150px;
+ padding-right: 150px;
+color: var(--couleur-texte);
+margin-bottom: 15px;
+}
+
+/* ---------- objectif profissionelle   ---------- */
+.objectif {
+  font-weight: bold;
+ padding-left: 150px;
+  padding-right: 150px;
+  color: var(--couleur-texte);
+  margin-bottom: 15px;
+}
+
 
 /* ---------- 7. Projets ---------- */
 /* Les projets sont empilés les uns sous les autres. */
@@ -217,7 +261,9 @@ a {
 }
 
 .projet p {
-  color: var(--couleur-texte-doux);
+  color: black;
+  font-weight: bold;
+
 }
 
 .technologies {
@@ -225,14 +271,17 @@ a {
   gap: 8px;
   margin-top: 16px;
   margin-bottom: 16px;
+  
 }
 
 .technologies li {
   padding: 4px 12px;
   border-radius: 6px;
   font-size: 14px;
-  background-color: var(--couleur-fond-clair);
+  background-color: white;
+
 }
+
 
 /* ---------- 8. Contact ---------- */
 .formulaire {
