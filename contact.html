@@ -1,28 +1,30 @@
+```html
 <!DOCTYPE html>
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Portfolio de Prénom Nom, apprenant développeur web.">
-  <title>Youssef Boukacha— Portfolio</title>
+  <meta name="description" content="Portfolio de Youssef Boukacha, apprenant développeur web.">
+  <title>Youssef Boukacha — Portfolio</title>
 
   <!-- Police Inter (Google Fonts) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-  <!-- ========== EN-TÊTE ========== -->
+  <!-- EN-TÊTE -->
   <header class="en-tete">
     <div class="conteneur en-tete__contenu">
       <a class="logo" href="index.html">Youssef Boukacha</a>
+
       <nav aria-label="Navigation principale">
         <ul class="menu">
           <li><a href="index.html">Présentation</a></li>
-          <li><a href="a-propos.html"> À propos</a></li>
+          <li><a href="a-propos.html">À propos</a></li>
           <li><a href="projets.html">Projets</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
@@ -31,26 +33,24 @@
   </header>
 
   <main>
-
-
-    <!-- ========== CONTACT ========== -->
+    <!-- CONTACT -->
     <section id="contact" class="section section--claire">
       <div class="conteneur">
         <h2>Contact</h2>
         <p class="section__intro">Une question, une proposition ? Écrivez-moi.</p>
 
         <form class="formulaire" action="#" method="post">
-          <label for="nom">Nom</label>
-          <input id="nom" name="nom" type="text" placeholder="Nom Et Prenom" required>
+          <label for="nom">Nom et prénom</label>
+          <input id="nom" name="nom" type="text" placeholder="Votre nom complet" required>
 
           <label for="email">E-mail</label>
-          <input id="email" name="email" type="email" placeholder="example@gmail.com" required>
+          <input id="email" name="email" type="email" placeholder="exemple@gmail.com" required>
 
-          <label for="sujet">sujet</label>
-          <input id="sujet" name="sujet" type="text" placeholder="ecrire un sujet"required>
-          
+          <label for="sujet">Sujet</label>
+          <input id="sujet" name="sujet" type="text" placeholder="Écrivez le sujet" required>
+
           <label for="message">Message</label>
-          <textarea id="message" name="message" rows="6" placeholder="ecrire un message" required ></textarea>
+          <textarea id="message" name="message" rows="6" placeholder="Écrivez votre message" required></textarea>
 
           <button class="bouton" type="submit">Envoyer</button>
         </form>
@@ -58,20 +58,18 @@
         <ul class="reseaux">
           <li><a class="lien" href="https://github.com/youssef-boukacha">GitHub</a></li>
           <li><a class="lien" href="https://linkedin.com/in/youssef-boukacha-365983308">LinkedIn</a></li>
-        
-</ul>
-
+        </ul>
       </div>
     </section>
-
   </main>
 
-  <!-- ========== PIED DE PAGE ========== -->
+  <!-- PIED DE PAGE -->
   <footer class="pied">
     <div class="conteneur">
-      <p>© 2026 youssef boukacha. Tous droits réservés.</p>
+      <p class="droits">© 2026 Youssef Boukacha.<br>Tous droits réservés.</p>
     </div>
   </footer>
 
 </body>
 </html>
+```

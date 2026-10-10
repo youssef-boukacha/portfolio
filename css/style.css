@@ -16,7 +16,7 @@
 :root {
   /* Couleurs */
   --couleur-fond: white;
-  --couleur-fond-clair:#d7eeff;
+  --couleur-fond-clair:#F8FAFC;
   --couleur-texte: black;
   --couleur-texte-doux: #5b6478;
   --couleur-principale: #2f5bea;
@@ -68,9 +68,11 @@ a {
 
 .conteneur {
   max-width: var(--largeur-max);
-  margin: 0 auto;
+  margin : 0 auto;
   padding: 0 24px;
   text-align: left;
+  
+
 }
 
 .bouton {
@@ -140,12 +142,12 @@ a {
   justify-content: space-between;
   align-items: center;
   gap: 64px;
-  background-color: #d7eeff;
+  background-color: #F8FAFC;
   
 
 }
 .userName{
-  font-weight: bold;
+  font-weight:bold;
   font-size: 10px;
 }
 .presentation__texte {
@@ -187,11 +189,11 @@ a {
 /* ---------- 5. Sections communes ---------- */
 .section {
   padding: 80px 0;
-  background-color:#d7eeff ;
+  background-color:#F8FAFC;
 }
 
 .section--claire {
-  background-color: var(--couleur-fond-clair);
+  background-color: #F8FAFC;
 }
 
 .section h2 {
@@ -204,9 +206,14 @@ a {
   margin-bottom: 40px;
   color: black;
   font-weight:normal;
- 
+  padding-left: 0%;
+
   
   
+}
+
+.competences {
+  padding-left: 40px; 
 }
 
 /* ---------- 6. Compétences ---------- */
@@ -224,6 +231,9 @@ a {
   background-color: var(--couleur-fond);
 }
 
+.phrase{
+  padding-left: 4%;
+}
 /* ---------- parcours  ---------- */
 .parcours {
  font-weight: normal;
@@ -253,6 +263,7 @@ margin-bottom: 15px;
   padding: 24px;
   border: 1px solid var(--couleur-bordure);
   border-radius: var(--rayon);
+
 }
 
 .projet__image {
@@ -286,6 +297,9 @@ margin-bottom: 15px;
   font-size: 14px;
   background-color: white;
 
+}
+.phrase{
+  padding-right: 8px; 
 }
 
 
@@ -328,4 +342,7 @@ margin-bottom: 15px;
   text-align: center;
   color: var(--couleur-texte-doux);
   margin-left: 40px;
+}
+.droits {
+  text-align: center;
 }
